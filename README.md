@@ -1,16 +1,4 @@
 # Go Web Admin 
-
-![版本](https://img.shields.io/badge/release-2.0-blue.svg)
-![语言](https://img.shields.io/badge/language-goland1.16.5-blue.svg)
-![base](https://img.shields.io/badge/base-gin-blue.svg)
-![base](https://img.shields.io/badge/base-casbin-blue.svg)
-
-> 一个Go Web Api 后端 简单例子,包含 用户、权限、菜单、JWT 、 RBAC(Casbin)等！
-
-> 本项目已停止维护，请仅供参考！ 
-
-> 交流QQ群： 620176501
-
 ## 表
 * user     
     * username  password   
@@ -29,20 +17,18 @@
 
 
 ## 目录结构
-* conf：用于存储配置文件
-* docs： 文档
-    * sql执行命令
-    * API注释
-* logs： 日志
-* middleware：应用中间件
-    * inject 初始化对象
-    * jwt
-    * permission  权限验证
-* models：应用数据库模型
+* conf：配置文件
+* docs： swagger
+* logs： 日誌
+* middleware：
+    * inject 初始化RBAC
+    * jwt 
+    * permission 權限驗證
+* models：資料庫模型ORM
 * pkg：第三方包
-* routers： 路由逻辑处理
-* service： 逻辑处理
-* test: 单元测试
+* routers： 路由邏輯處理
+* service： 業務邏輯處理
+* sql : 資料庫 sql script flyway
 
 
 ## 权限验证说明
